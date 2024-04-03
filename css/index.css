@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #121214;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+p {
+    color: #7C7C8A
+}
+
+.logo img {
+    width: 117px;
+    height: 25px;
+}
+
+.cards {
+
+
+    margin: 24px 24px 24px 32px;
+
+
+}
+
+.card {
+    border: 1px solid;
+    height: 150px;
+    width: 280px;
+    background-color: #323238;
+    border-radius: 0.5em;
+    padding:30px 25px 0px 30px ;
+    box-shadow: #7C7C8A;
+    
+}
+.card02 {
+    border: 1px solid;
+    height: 150px;
+    width: 280px;
+    background-color: #323238;
+    border-radius: 0.5em;
+    padding:30px 25px 0px 30px ;
+    box-shadow: #7C7C8A;
+    margin-left: 15px;
+}
+.card03 {
+    border: 1px solid;
+    height: 150px;
+    width: 280px;
+    background-color: #323238;
+    border-radius: 0.5em;
+    padding:30px 25px 0px 30px ;
+    box-shadow: #7C7C8A;
+    margin-left: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text_entrada {
+    display: flex;
+}
+.text_entrada{
+    justify-content: space-between;
+    color: #C4C4CC;
+}
+.info h3{
+   margin-top: 10px;
+    color: #E1E1E6;
+}
+.cards{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+   
+}
