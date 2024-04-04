@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: white;
+    background-color:#202024;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -14,28 +14,34 @@ header {
     background-color: #121214;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 
-p {
-    color: #7C7C8A
+strong {
+    color: #C4C4CC;
 }
-
+h3{
+    color: #C4C4CC;
+}
+p{
+    color: #C4C4CC
+}
 .logo img {
     width: 117px;
     height: 25px;
+    margin-top: 10px;
 }
 
 .cards {
 
-
-    margin: 24px 24px 24px 32px;
+    display: flex;
+    margin: 24px 24px 24px 24px;
 
 
 }
 
 .card {
-    border: 1px solid;
+    
     height: 150px;
     width: 280px;
     background-color: #323238;
@@ -45,7 +51,7 @@ p {
     
 }
 .card02 {
-    border: 1px solid;
+    
     height: 150px;
     width: 280px;
     background-color: #323238;
@@ -55,7 +61,7 @@ p {
     margin-left: 15px;
 }
 .card03 {
-    border: 1px solid;
+    
     height: 150px;
     width: 280px;
     background-color: #323238;
@@ -65,9 +71,8 @@ p {
     margin-left: 15px;
 }
 
-.flex {
-    display: flex;
-}
+
+
 
 .align-center {
     align-items: center;
@@ -94,3 +99,103 @@ p {
     scroll-padding-left: 20px;
    
 }
+.transacoes{
+display: flex;
+justify-content: space-between;
+margin: 10px 25px;
+}
+.input{
+    display: flex;
+}
+.card_transicoes{
+    margin: 5px 25px 10px;
+    border-radius: 6px;
+    padding: 20px;
+    gap: 12px;
+    box-shadow: 0px 5px 15px rgba(48, 43, 43, 0.1);
+    background-color: #323238;
+}
+.title_transicoes{
+    display: flex;
+    justify-content: space-between;
+}
+.title_transicoes p{
+    margin-right: 24px;
+}
+.busca input{
+height: 50px;
+width: 300px;
+margin: 0px 5px 10px 24px;
+border-radius: 6px;
+box-shadow: 0px 5px 15px rgba(48, 43, 43, 0.1);
+background-color: #121214;
+color: #7C7C8A;
+}
+.busca button{
+    height: 50px;
+    background-color: #202024;
+}
+.informa{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.button_header button{
+    padding: 0;
+    margin: 0;
+    background-color: #00875F; 
+    color: white; 
+    border: none; 
+    padding: 8px, 16px, 8px, 16px;
+    height:38px;
+    width: 130px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.icon img{
+height: 30px;
+}
+.card_transicoes p{
+    margin-bottom: 10px;
+}
+.background{
+    background-color: #ffffff;
+}
+
+
+
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posição fixa */
+    z-index: 1; /* Coloca o modal acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita rolagem */
+    background-color: rgba(0,0,0,0.4); /* Fundo semi-transparente */
+  }
+  
+  /* Estilo do conteúdo do modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do conteúdo do modal */
+  }
+  
+  /* Estilo do botão de fechar */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
