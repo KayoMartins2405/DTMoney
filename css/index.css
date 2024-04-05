@@ -32,13 +32,7 @@ p{
     margin-top: 10px;
 }
 
-.cards {
 
-    display: flex;
-    margin: 24px 24px 24px 24px;
-
-
-}
 
 .card {
     
@@ -46,29 +40,10 @@ p{
     width: 280px;
     background-color: #323238;
     border-radius: 0.5em;
-    padding:30px 25px 0px 30px ;
+    margin: 10px 6px;
+    padding: 15px;
     box-shadow: #7C7C8A;
     
-}
-.card02 {
-    
-    height: 150px;
-    width: 280px;
-    background-color: #323238;
-    border-radius: 0.5em;
-    padding:30px 25px 0px 30px ;
-    box-shadow: #7C7C8A;
-    margin-left: 15px;
-}
-.card03 {
-    
-    height: 150px;
-    width: 280px;
-    background-color: #323238;
-    border-radius: 0.5em;
-    padding:30px 25px 0px 30px ;
-    box-shadow: #7C7C8A;
-    margin-left: 15px;
 }
 
 
@@ -97,18 +72,25 @@ p{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-padding-left: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    margin: 24px 24px 5px 15px;
    
 }
 .transacoes{
 display: flex;
 justify-content: space-between;
+align-items: flex-end;
 margin: 10px 25px;
+
 }
-.input{
+.filter{
     display: flex;
+    justify-content: space-between;
+
 }
 .card_transicoes{
-    margin: 5px 25px 10px;
+    /* margin: 5px 25px 10px; */
     border-radius: 6px;
     padding: 20px;
     gap: 12px;
@@ -124,16 +106,23 @@ margin: 10px 25px;
 }
 .busca input{
 height: 50px;
-width: 300px;
-margin: 0px 5px 10px 24px;
+width: 80%;
+/* margin: 0px 5px 10px 24px; */
 border-radius: 6px;
 box-shadow: 0px 5px 15px rgba(48, 43, 43, 0.1);
 background-color: #121214;
 color: #7C7C8A;
+border:none
 }
+
 .busca button{
     height: 50px;
+    width: 15%;
     background-color: #202024;
+    border: none;
+    border: 1px solid #00B37E;
+    /* padding: 0 17px; */
+    border-radius: 6px;
 }
 .informa{
     display: flex;
@@ -161,41 +150,21 @@ height: 30px;
 .background{
     background-color: #ffffff;
 }
+.main{
+    margin: 0 20px;
+}
+.main div{
+    
+    margin-top: 15px;
+}
+.red{
+    color: #F75A68ed;
+}
+.green{
+    color: #00875F;
+}
 
+.valor{
+    font-size: 20px;
+}
 
-
-.modal {
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Posição fixa */
-    z-index: 1; /* Coloca o modal acima de outros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    overflow: auto; /* Habilita rolagem */
-    background-color: rgba(0,0,0,0.4); /* Fundo semi-transparente */
-  }
-  
-  /* Estilo do conteúdo do modal */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* Centraliza verticalmente */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Largura do conteúdo do modal */
-  }
-  
-  /* Estilo do botão de fechar */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
