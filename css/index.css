@@ -14,7 +14,7 @@ header {
     background-color: #121214;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 35px;
 }
 
 strong {
@@ -27,11 +27,10 @@ p{
     color: #C4C4CC
 }
 .logo img {
-    width: 117px;
-    height: 25px;
+    width: 120px;
+    height: 26px;
     margin-top: 10px;
 }
-
 
 
 .card {
@@ -74,7 +73,7 @@ p{
     scroll-padding-left: 20px;
     display: grid;
     grid-auto-flow: column;
-    margin: 24px 24px 5px 15px;
+    margin: 0px 24px 5px 15px;
    
 }
 .transacoes{
@@ -82,6 +81,7 @@ display: flex;
 justify-content: space-between;
 align-items: flex-end;
 margin: 10px 25px;
+font-size: 18px;
 
 }
 .filter{
@@ -107,12 +107,14 @@ margin: 10px 25px;
 .busca input{
 height: 50px;
 width: 80%;
-/* margin: 0px 5px 10px 24px; */
+padding: 16px;
 border-radius: 6px;
 box-shadow: 0px 5px 15px rgba(48, 43, 43, 0.1);
 background-color: #121214;
 color: #7C7C8A;
-border:none
+border:none;
+font-size: 16px;
+
 }
 
 .busca button{
@@ -121,14 +123,18 @@ border:none
     background-color: #202024;
     border: none;
     border: 1px solid #00B37E;
-    /* padding: 0 17px; */
+    padding: 16px;
     border-radius: 6px;
+ 
 }
+
 .informa{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    
 }
+
 .button_header button{
     padding: 0;
     margin: 0;
@@ -146,6 +152,8 @@ height: 30px;
 }
 .card_transicoes p{
     margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
 }
 .background{
     background-color: #ffffff;
@@ -167,4 +175,81 @@ height: 30px;
 .valor{
     font-size: 20px;
 }
+.home{
+    background-image: linear-gradient( #121214 65%, #202024 35%);
+} 
+.paginacao{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+    gap: 8px;
+}
+.paginacao button{
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    background-color: #323238;
+    color: #8D8D99;
+    border: none;
+    font-size: 16px;
+    line-height: 22.4px;
+    padding: 5px;
+}
+.setas{
+    display: flex ;
+    align-items: center;
+    color: #8D8D99;
+}
 
+
+@media only screen and (min-width: 900px) {
+    header{
+   
+        padding: 40px 90px;
+    }
+    .logo img {
+        width: 130px;
+        height: 30px;
+        margin-top: 10px;
+    }
+   
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 50px;
+        overflow-x: hidden;
+    }
+    .card{
+        width: 30%;
+    }
+   .transacoes{
+        display: none;
+       }
+    .main{
+        margin: 10px 80px;
+    }
+    .busca input{
+        height: 50px;
+        width: 85%;
+        padding: 16px;
+        border-radius: 6px;
+        box-shadow: 0px 5px 15px rgba(48, 43, 43, 0.1);
+        background-color: #121214;
+        color: #7C7C8A;
+        border:none;
+        font-size: 16px;
+        
+        }
+        
+        .busca button{
+            height: 50px;
+            width: 13%;
+            background-color: #202024;
+            border: none;
+            border: 1px solid #00B37E;
+            padding: 16px;
+            border-radius: 6px;
+         
+        }    
+}
