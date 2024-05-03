@@ -31,7 +31,10 @@ p{
     height: 26px;
     margin-top: 10px;
 }
-
+.top{
+    display: flex;
+    justify-content: space-between;
+}
 
 .card {
     

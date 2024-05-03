@@ -24,7 +24,7 @@
             /* Largura total */
             height: 100%;
             /* Altura total */
-            overflow: auto;
+          
             /* Habilita rolagem */
             background-color: rgba(0, 0, 0, 0.4);
             /* Fundo semi-transparente */
@@ -33,12 +33,66 @@
         /* Estilo para o conteúdo do modal */
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto;
+            margin: 90% auto;
             /* Centraliza verticalmente */
             padding: 20px;
             border: 1px solid #888;
-            width: 80%;
+            width: 100%;
             /* Largura do conteúdo do modal */
+        }
+
+        .modal-content {
+            background-color: #202024;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-content .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-content .inputs input {
+            height: 40px;
+            background-color: #0d0d0e;
+            border: none;
+            border-radius: 6px;
+        }
+        .saidasaldo{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            gap: 10px;
+            
+        }
+        .infoent{
+            display: flex;
+            background-color: #323238;
+            width: 50%;
+            height: 50px;
+            border-radius: 6px;
+            padding: 15px;  
+            
+        }
+        .infosaida{
+            display: flex;
+            background-color: #323238;
+            width: 50%;
+            height: 50px;
+            border-radius: 6px; 
+            padding: 15px;  
+       
+        }
+        
+        .saidasaldo img{
+            height: 20px;
+            
+        }
+        .open {
+            display: block;
         }
 
         /* Estilo para o botão de fechar */
@@ -66,16 +120,39 @@
                 <img src="img/Logo.png" alt="">
             </div>
             <div class="button_header">
-                <a href=""><button id="openModalBtn">Nova Transição</button></a>
+                <button id="openModalBtn">Nova Transição</button>
             </div>
         </header>
+
+
         <div id="myModal" class="modal">
             <!-- Conteúdo do modal -->
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>geyryerge7rterhrhfehhrhqiwiidwerrier naruto naaur naruto</h1>
+                <div class="top">
+                    <p> Nova transação </p>
+                    <img id="fechar" src="img/fechar.png"></img>
+                </div>
+
+                <div class="inputs">
+                    <input type="text" id="input-descricao" class="grid-item" placeholder="Descrição">
+                    <input type="number" id="input-preco" class="grid-item" placeholder="Preço">
+                    <input type="text" id="input-categoria" class="grid-item" placeholder="Categoria">
+                </div>
+              <div class="saidasaldo">
+                <div class="infoent">
+                <img src="img/Icons.png" alt="">
+               <p> Entrada </p>
+               </div>
+                <div class="infosaida">
+                <img src="img/saida.png" alt="">
+                <p>Saída</p>
+               </div>
+            </div>
+                <button id="btnAdd" disabled>Adicionar</button>
             </div>
         </div>
+
+
         <div class="cards">
             <div class="card">
                 <div class="text_entrada flex">
@@ -146,80 +223,18 @@
                     <p><img src="img/calendario.png" alt="">13/04/2022</p>
                 </div>
             </div>
-            <div class="card_transicoes">
-                <p><strong>Hamburguer</strong></p>
-                <div class="valor red">
-                    - R$ 59,00
-                </div>
-                <div class="informa">
-                    <p><img src="img/vector.png" alt="">Alimentação</p>
-                    <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                </div>
-            </div>
-            <div class="cards_transicoes">
-                <div class="card_transicoes">
-                    <p><strong>Desenvolvimento de site</strong></p>
-                    <div class="valor green">
-                        R$12.000,00
-                    </div>
 
-                    <div class="informa">
-                        <p><img src="img/vector.png" alt="">Vendas</p>
-                        <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                    </div>
-                </div>
-                <div class="card_transicoes">
-                    <p><strong>Hamburguer</strong></p>
-                    <div class="valor red">
-                        - R$ 59,00
-                    </div>
-                    <div class="informa">
-                        <p><img src="img/vector.png" alt="">Alimentação</p>
-                        <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                    </div>
-                </div>
-                <div class="cards_transicoes">
-                    <div class="card_transicoes">
-                        <p><strong>Desenvolvimento de site</strong></p>
-                        <div class="valor green">
-                            R$12.000,00
 
-                        </div>
-                        <div class="informa">
-                            <p><img src="img/vector.png" alt="">Vendas</p>
-                            <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                        </div>
-                    </div>
-                    <div class="card_transicoes">
-                        <p><strong>Hamburguer</strong></p>
-                        <div class="valor red">
-                            - R$ 59,00
-                        </div>
-                        <div class="informa">
-                            <p><img src="img/vector.png" alt="">Alimentação</p>
-                            <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                        </div>
-                    </div>
-                    <div class="card_transicoes">
-                        <p><strong>Hamburguer</strong></p>
-                        <div class="valor red">
-                            - R$ 59,00
-                        </div>
-                        <div class="informa">
-                            <p><img src="img/vector.png" alt="">Alimentação</p>
-                            <p><img src="img/calendario.png" alt="">13/04/2022</p>
-                        </div>
-                    </div>
 
-                </div>
-
-            </div>
         </div>
+
+    </div>
+    </div>
     </div>
     <div class="rodape">
         <div class="paginacao">
             <div class="setas">
-                <img  src="img/left2.png" alt="">
+                <img src="img/left2.png" alt="">
             </div>
             <!-- <div class="butons"> -->
             <button>1</button>
@@ -234,6 +249,20 @@
     </div>
 
     <script>
+
+        const modal = document.querySelector('#myModal');
+        const abrir = document.getElementById('openModalBtn');
+        const fechar = document.getElementById('fechar');
+
+        abrir.addEventListener("click", function () {
+            modal.classList.add('open');
+        });
+        fechar.addEventListener("click", function () {
+            modal.classList.remove('open');
+        });
+
+
+
 
     </script>
 
