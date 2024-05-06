@@ -35,7 +35,9 @@ p{
     display: flex;
     justify-content: space-between;
 }
-
+.top p {
+    font-size: 18px;
+}
 .card {
     
     height: 150px;
